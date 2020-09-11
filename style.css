@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish";
+    background-color: #EFF2F8;
+}
+
+.main-container{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    background-color: #9677EF;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.content-container{
+    position: absolute;
+    width: 50%;
+    height: 380px;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cross{
+    align-self: flex-end;
+    margin: 10px;
+}
+
+.main-header{
+    margin: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.desc{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.sign-up{
+    margin: 10px auto;
+    display: flex;
+    width: 90%;
+}
+
+input{
+    border: 1px solid #E5E5E5;
+    padding: 12px;
+    flex-basis: 95%;
+    border-radius: 5px;
+}
+
+.main-btn{
+    text-decoration: none;
+    background-color: #9677EF;
+    padding: 10px 20px;
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 20px;
+    box-shadow: 0 5px 5px rgb(226, 226, 226);
+}
+
+.bottom-section{
+    width: 90%;
+    margin: 20px auto;
+    background-color: #F8F9FD;
+    border-radius: 5px;
+}
+
+.second-header{
+    margin-left: 20px;
+}
+
+.paragraph{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+@media(max-width: 768px){
+    .circle{
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media(max-width: 650px){
+    .content-container{
+        width: 80%;
+        height: 550px;
+    }
+
+    .sign-up{
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-btn{
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+}
+
